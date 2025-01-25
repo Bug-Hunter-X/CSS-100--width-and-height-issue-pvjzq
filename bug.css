@@ -1,0 +1,10 @@
+The following CSS rule is causing unexpected behavior:
+
+```css
+div {
+  width: 100%;
+  height: 100%;
+}
+```
+
+The issue is that `100%` for both `width` and `height` is relative to its containing element. If the parent element doesn't have explicitly defined dimensions, this can result in the div having zero width and height.
